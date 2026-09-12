@@ -9,6 +9,33 @@
     "timestamp": 1789240438.378203
   },
   {
+    "ticket_id": "T007",
+    "text": "I had an item marked for return and refund however it's no longer visible in my orders section in my profile dashboard. I want my money transferred back to me immediately. I am losing my patience, this issue hasn't been addressed since 2 days.",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789245720.972033
+  },
+  {
+    "ticket_id": "T003",
+    "text": "I've had so many issues recently",
+    "raw_confidence": 0.15,
+    "coverage_score": 0.6667,
+    "gap": -0.5167,
+    "success": false,
+    "timestamp": 1789245762.7041438
+  },
+  {
+    "ticket_id": "T003",
+    "text": "I've had so many issues recently",
+    "raw_confidence": 0.15,
+    "coverage_score": 0.6667,
+    "gap": -0.5167,
+    "success": false,
+    "timestamp": 1789245775.9666095
+  },
+  {
     "ticket_id": "T004",
     "text": "I cannot log into my account...",
     "raw_confidence": 0.8,
@@ -16,5 +43,14 @@
     "gap": 0.2,
     "success": false,
     "timestamp": 1789240438.3792028
+  },
+  {
+    "ticket_id": "T004",
+    "text": "I cannot log into my account at all! It keeps saying my account is locked. I have tried multiple times but nothing works. Please unlock my account.",
+    "raw_confidence": 0.85,
+    "coverage_score": 0.6,
+    "gap": 0.25,
+    "success": false,
+    "timestamp": 1789245789.2397597
   }
 ]

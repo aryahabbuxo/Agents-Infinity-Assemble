@@ -1,6 +1,6 @@
 [
   {
-    "timestamp": "2026-09-13T00:15:54.568851",
+    "timestamp": "2026-09-13T02:11:55.903402",
     "ticket_id": "T007",
     "agent": "billing_agent",
     "action": "confirm_refund_already_processed (no-op)",
@@ -20,7 +20,7 @@
     }
   },
   {
-    "timestamp": "2026-09-13T00:15:59.650055",
+    "timestamp": "2026-09-13T02:12:00.964476",
     "ticket_id": "T007",
     "agent": "technical_agent",
     "action": "resync_orders",
@@ -39,7 +39,7 @@
     }
   },
   {
-    "timestamp": "2026-09-13T00:16:40.144995",
+    "timestamp": "2026-09-13T02:12:13.125067",
     "ticket_id": "T002",
     "agent": "billing_agent",
     "action": "release_pending_refund",
@@ -59,7 +59,7 @@
     }
   },
   {
-    "timestamp": "2026-09-13T00:17:30.774829",
+    "timestamp": "2026-09-13T02:12:25.399401",
     "ticket_id": "T003",
     "agent": "retention_agent",
     "action": "cancel_subscription",
@@ -98,7 +98,7 @@
     }
   },
   {
-    "timestamp": "2026-09-13T00:17:34.785935",
+    "timestamp": "2026-09-13T02:12:29.442940",
     "ticket_id": "T003",
     "agent": "billing_agent",
     "action": "flag_for_manual_review:unspecified",
@@ -118,7 +118,7 @@
     }
   },
   {
-    "timestamp": "2026-09-13T00:18:21.793693",
+    "timestamp": "2026-09-13T02:13:09.237230",
     "ticket_id": "T004",
     "agent": "technical_agent",
     "action": "unlock_account",
@@ -137,7 +137,7 @@
     }
   },
   {
-    "timestamp": "2026-09-13T00:19:15.378181",
+    "timestamp": "2026-09-13T02:13:21.413730",
     "ticket_id": "T004",
     "agent": "billing_agent",
     "action": "reissue_invoice",

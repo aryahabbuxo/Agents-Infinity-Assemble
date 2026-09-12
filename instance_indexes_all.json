@@ -1,0 +1,152 @@
+{
+  "billing_agent": [
+    {
+      "ticket_id": "T002",
+      "text": "My refund hasnt shown up...",
+      "raw_confidence": 0.8,
+      "coverage_score": 1.0,
+      "gap": -0.2,
+      "success": true,
+      "timestamp": 1789240438.377203
+    },
+    {
+      "ticket_id": "T002",
+      "text": "My refund hasn't shown up yet, it's been 2 days, please check the payment.",
+      "raw_confidence": 0.8,
+      "coverage_score": 1.0,
+      "gap": -0.2,
+      "success": true,
+      "timestamp": 1789245733.131805
+    },
+    {
+      "ticket_id": "T007",
+      "text": "item marked for return and refund...",
+      "raw_confidence": 0.97,
+      "coverage_score": 1.0,
+      "gap": -0.03,
+      "success": true,
+      "timestamp": 1789240438.377203
+    },
+    {
+      "ticket_id": "T007",
+      "text": "I had an item marked for return and refund however it's no longer visible in my orders section in my profile dashboard. I want my money transferred back to me immediately. I am losing my patience, this issue hasn't been addressed since 2 days.",
+      "raw_confidence": 0.97,
+      "coverage_score": 1.0,
+      "gap": -0.03,
+      "success": true,
+      "timestamp": 1789245720.9700315
+    },
+    {
+      "ticket_id": "T003",
+      "text": "I have been a customer for 3 years and I've had so many issues recently. Nobody helps me. I want to cancel my subscription immediately!",
+      "raw_confidence": 0.6667,
+      "coverage_score": 0.6667,
+      "gap": 0.0,
+      "success": false,
+      "timestamp": 1789245749.4493997
+    },
+    {
+      "ticket_id": "T004",
+      "text": "I have tried multiple times nothing works",
+      "raw_confidence": 0.15,
+      "coverage_score": 0.6,
+      "gap": -0.45,
+      "success": false,
+      "timestamp": 1789245801.4186397
+    },
+    {
+      "ticket_id": "T004",
+      "text": "I have tried multiple times nothing works",
+      "raw_confidence": 0.2,
+      "coverage_score": 0.6,
+      "gap": -0.4,
+      "success": false,
+      "timestamp": 1789245813.6026304
+    }
+  ],
+  "technical_agent": [
+    {
+      "ticket_id": "T007",
+      "text": "dashboard display issue...",
+      "raw_confidence": 0.45,
+      "coverage_score": 1.0,
+      "gap": -0.55,
+      "success": true,
+      "timestamp": 1789240438.378203
+    },
+    {
+      "ticket_id": "T007",
+      "text": "I had an item marked for return and refund however it's no longer visible in my orders section in my profile dashboard. I want my money transferred back to me immediately. I am losing my patience, this issue hasn't been addressed since 2 days.",
+      "raw_confidence": 1.0,
+      "coverage_score": 1.0,
+      "gap": 0.0,
+      "success": true,
+      "timestamp": 1789245720.972033
+    },
+    {
+      "ticket_id": "T003",
+      "text": "I've had so many issues recently",
+      "raw_confidence": 0.15,
+      "coverage_score": 0.6667,
+      "gap": -0.5167,
+      "success": false,
+      "timestamp": 1789245762.7041438
+    },
+    {
+      "ticket_id": "T003",
+      "text": "I've had so many issues recently",
+      "raw_confidence": 0.15,
+      "coverage_score": 0.6667,
+      "gap": -0.5167,
+      "success": false,
+      "timestamp": 1789245775.9666095
+    },
+    {
+      "ticket_id": "T004",
+      "text": "I cannot log into my account...",
+      "raw_confidence": 0.8,
+      "coverage_score": 0.6,
+      "gap": 0.2,
+      "success": false,
+      "timestamp": 1789240438.3792028
+    },
+    {
+      "ticket_id": "T004",
+      "text": "I cannot log into my account at all! It keeps saying my account is locked. I have tried multiple times but nothing works. Please unlock my account.",
+      "raw_confidence": 0.85,
+      "coverage_score": 0.6,
+      "gap": 0.25,
+      "success": false,
+      "timestamp": 1789245789.2397597
+    }
+  ],
+  "retention_agent": [
+    {
+      "ticket_id": "T003",
+      "text": "cancel my subscription...",
+      "raw_confidence": 0.7,
+      "coverage_score": 1.0,
+      "gap": -0.3,
+      "success": true,
+      "timestamp": 1789240438.3792028
+    },
+    {
+      "ticket_id": "T003",
+      "text": "I have been a customer for 3 years and I've had so many issues recently. Nobody helps me. I want to cancel my subscription immediately!",
+      "raw_confidence": 0.97,
+      "coverage_score": 0.6667,
+      "gap": 0.3033,
+      "success": false,
+      "timestamp": 1789245749.4472835
+    },
+    {
+      "ticket_id": "T004",
+      "text": "re-bid iteration 2 retention offer...",
+      "raw_confidence": 0.95,
+      "coverage_score": 0.6,
+      "gap": 0.35,
+      "success": false,
+      "timestamp": 1789240438.3802035
+    }
+  ]
+}

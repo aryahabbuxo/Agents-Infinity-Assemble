@@ -9,6 +9,15 @@
     "timestamp": 1789240438.3792028
   },
   {
+    "ticket_id": "T003",
+    "text": "I have been a customer for 3 years and I've had so many issues recently. Nobody helps me. I want to cancel my subscription immediately!",
+    "raw_confidence": 0.97,
+    "coverage_score": 0.6667,
+    "gap": 0.3033,
+    "success": false,
+    "timestamp": 1789245749.4472835
+  },
+  {
     "ticket_id": "T004",
     "text": "re-bid iteration 2 retention offer...",
     "raw_confidence": 0.95,
