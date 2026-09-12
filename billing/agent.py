@@ -14,11 +14,11 @@ Public entry point: BillingAgent.handle_ticket(ticket)
 import json
 import re
 
-from bidding import estimate_raw_confidence, compute_final_bid
-from sandbox import BillingSandbox
-from negotiation import make_propose, run_negotiation, MockTechnicalAgent
-from capability import CAPABILITY_CARD
-from llm_client import call_llm, LLMUnavailableError
+from billing.bidding import estimate_raw_confidence, compute_final_bid
+from billing.sandbox import BillingSandbox
+from billing.negotiation import make_propose, run_negotiation, MockTechnicalAgent
+from billing.capability import CAPABILITY_CARD
+from billing.llm_client import call_llm, LLMUnavailableError
 
 # The ONLY tool names the LLM is allowed to choose from. Never execute a
 # tool name that isn't in this set — this is what stops the model from

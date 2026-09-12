@@ -13,8 +13,8 @@ keyword-based rule if the LLM is unavailable, so the demo never crashes.
 """
 
 import re
-from capability import BILLING_KEYWORDS
-from llm_client import call_llm, LLMUnavailableError
+from billing.capability import BILLING_KEYWORDS
+from billing.llm_client import call_llm, LLMUnavailableError
 
 CONFIDENCE_PROMPT = (
     "On a scale of 0 to 1, how confident are you — a billing specialist "

@@ -11,8 +11,8 @@ bidding.py and agent.py automatically fall back to their rule-based logic.
 """
 
 import json
-from agent import BillingAgent
-from sandbox import BillingSandbox
+from billing.agent import BillingAgent
+from billing.sandbox import BillingSandbox
 
 TICKETS = [
     {

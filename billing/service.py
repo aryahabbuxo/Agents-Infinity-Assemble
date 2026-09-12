@@ -21,9 +21,9 @@ Endpoints:
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
-from agent import BillingAgent
-from sandbox import BillingSandbox
-from capability import CAPABILITY_CARD
+from billing.agent import BillingAgent
+from billing.sandbox import BillingSandbox
+from billing.capability import CAPABILITY_CARD
 
 app = FastAPI(title="Billing Agent Service")
 
