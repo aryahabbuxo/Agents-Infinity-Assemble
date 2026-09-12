@@ -1,0 +1,35 @@
+{
+  "C001": {
+    "name": "Rahul",
+    "subscription": "premium",
+    "subscription_status": "active",
+    "months_as_customer": 36,
+    "complaints_last_30_days": 3,
+    "satisfaction_score": 45,
+    "cancellation_requested": false,
+    "loyalty_points": 1200,
+    "retention_offer_available": false
+  },
+  "C002": {
+    "name": "Priya",
+    "subscription": "basic",
+    "subscription_status": "active",
+    "months_as_customer": 2,
+    "complaints_last_30_days": 0,
+    "satisfaction_score": 82,
+    "cancellation_requested": false,
+    "loyalty_points": 100,
+    "retention_offer_available": false
+  },
+  "C003": {
+    "name": "Arjun",
+    "subscription": "premium",
+    "subscription_status": "active",
+    "months_as_customer": 18,
+    "complaints_last_30_days": 5,
+    "satisfaction_score": 32,
+    "cancellation_requested": true,
+    "loyalty_points": 850,
+    "retention_offer_available": false
+  }
+}
