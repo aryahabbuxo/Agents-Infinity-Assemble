@@ -1,0 +1,20 @@
+[
+  {
+    "ticket_id": "T003",
+    "text": "cancel my subscription...",
+    "raw_confidence": 0.7,
+    "coverage_score": 1.0,
+    "gap": -0.3,
+    "success": true,
+    "timestamp": 1789240438.3792028
+  },
+  {
+    "ticket_id": "T004",
+    "text": "re-bid iteration 2 retention offer...",
+    "raw_confidence": 0.95,
+    "coverage_score": 0.6,
+    "gap": 0.35,
+    "success": false,
+    "timestamp": 1789240438.3802035
+  }
+]

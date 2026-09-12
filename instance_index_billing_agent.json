@@ -1,0 +1,20 @@
+[
+  {
+    "ticket_id": "T002",
+    "text": "My refund hasnt shown up...",
+    "raw_confidence": 0.8,
+    "coverage_score": 1.0,
+    "gap": -0.2,
+    "success": true,
+    "timestamp": 1789240438.377203
+  },
+  {
+    "ticket_id": "T007",
+    "text": "item marked for return and refund...",
+    "raw_confidence": 0.97,
+    "coverage_score": 1.0,
+    "gap": -0.03,
+    "success": true,
+    "timestamp": 1789240438.377203
+  }
+]

@@ -1,0 +1,159 @@
+[
+  {
+    "timestamp": "2026-09-13T00:15:54.568851",
+    "ticket_id": "T007",
+    "agent": "billing_agent",
+    "action": "confirm_refund_already_processed (no-op)",
+    "order_id": "O-1003",
+    "customer_id": "C001",
+    "before": {
+      "payment_status": "SUCCESS",
+      "refund_status": "PROCESSED",
+      "invoice_status": "GENERATED",
+      "duplicate_charge": false
+    },
+    "after": {
+      "payment_status": "SUCCESS",
+      "refund_status": "PROCESSED",
+      "invoice_status": "GENERATED",
+      "duplicate_charge": false
+    }
+  },
+  {
+    "timestamp": "2026-09-13T00:15:59.650055",
+    "ticket_id": "T007",
+    "agent": "technical_agent",
+    "action": "resync_orders",
+    "order_id": "O-1003",
+    "before": {
+      "exists": true,
+      "visible": false,
+      "sync_status": "FAILED",
+      "status": "RETURN_REQUESTED"
+    },
+    "after": {
+      "exists": true,
+      "visible": true,
+      "sync_status": "HEALTHY",
+      "status": "RETURN_REQUESTED"
+    }
+  },
+  {
+    "timestamp": "2026-09-13T00:16:40.144995",
+    "ticket_id": "T002",
+    "agent": "billing_agent",
+    "action": "release_pending_refund",
+    "order_id": "O-1001",
+    "customer_id": "C002",
+    "before": {
+      "payment_status": "REFUND_INITIATED",
+      "refund_status": "PENDING",
+      "invoice_status": "GENERATED",
+      "duplicate_charge": false
+    },
+    "after": {
+      "payment_status": "SUCCESS",
+      "refund_status": "PROCESSED",
+      "invoice_status": "GENERATED",
+      "duplicate_charge": false
+    }
+  },
+  {
+    "timestamp": "2026-09-13T00:17:30.774829",
+    "ticket_id": "T003",
+    "agent": "retention_agent",
+    "action": "cancel_subscription",
+    "customer_id": "C003",
+    "before": {
+      "name": "Arjun",
+      "subscription": "premium",
+      "subscription_status": "active",
+      "months_as_customer": 18,
+      "complaints_last_30_days": 5,
+      "satisfaction_score": 32,
+      "cancellation_requested": true,
+      "loyalty_points": 850,
+      "retention_offer_available": false,
+      "tech_state": {
+        "account_status": "ACTIVE",
+        "session_status": "ACTIVE",
+        "login_failures": 0
+      }
+    },
+    "after": {
+      "name": "Arjun",
+      "subscription": "premium",
+      "subscription_status": "cancelled",
+      "months_as_customer": 18,
+      "complaints_last_30_days": 5,
+      "satisfaction_score": 32,
+      "cancellation_requested": true,
+      "loyalty_points": 850,
+      "retention_offer_available": false,
+      "tech_state": {
+        "account_status": "ACTIVE",
+        "session_status": "ACTIVE",
+        "login_failures": 0
+      }
+    }
+  },
+  {
+    "timestamp": "2026-09-13T00:17:34.785935",
+    "ticket_id": "T003",
+    "agent": "billing_agent",
+    "action": "flag_for_manual_review:unspecified",
+    "order_id": "O-1002",
+    "customer_id": "C003",
+    "before": {
+      "payment_status": "FAILED",
+      "refund_status": "REJECTED",
+      "invoice_status": "GENERATED",
+      "duplicate_charge": false
+    },
+    "after": {
+      "payment_status": "FAILED",
+      "refund_status": "MANUAL_REVIEW",
+      "invoice_status": "GENERATED",
+      "duplicate_charge": false
+    }
+  },
+  {
+    "timestamp": "2026-09-13T00:18:21.793693",
+    "ticket_id": "T004",
+    "agent": "technical_agent",
+    "action": "unlock_account",
+    "customer_id": "C004",
+    "before": {
+      "customer_id": "C004",
+      "account_status": "LOCKED",
+      "session_status": "EXPIRED",
+      "login_failures": 5
+    },
+    "after": {
+      "customer_id": "C004",
+      "account_status": "ACTIVE",
+      "session_status": "EXPIRED",
+      "login_failures": 0
+    }
+  },
+  {
+    "timestamp": "2026-09-13T00:19:15.378181",
+    "ticket_id": "T004",
+    "agent": "billing_agent",
+    "action": "reissue_invoice",
+    "order_id": "O-1004",
+    "customer_id": "C004",
+    "before": {
+      "payment_status": "SUCCESS",
+      "refund_status": "NOT_REQUESTED",
+      "invoice_status": "MISSING",
+      "duplicate_charge": false
+    },
+    "after": {
+      "payment_status": "SUCCESS",
+      "refund_status": "NOT_REQUESTED",
+      "invoice_status": "GENERATED",
+      "duplicate_charge": false
+    }
+  }
+]
