@@ -1,0 +1,100 @@
+[
+  {
+    "timestamp": "2026-09-12T17:58:54.726122",
+    "ticket_id": "T007",
+    "agent": "billing_agent",
+    "action": "confirm_refund_already_processed (no-op)",
+    "order_id": "O-1003",
+    "customer_id": "C001",
+    "before": {
+      "payment_status": "SUCCESS",
+      "refund_status": "PROCESSED",
+      "invoice_status": "GENERATED",
+      "duplicate_charge": false
+    },
+    "after": {
+      "payment_status": "SUCCESS",
+      "refund_status": "PROCESSED",
+      "invoice_status": "GENERATED",
+      "duplicate_charge": false
+    }
+  },
+  {
+    "timestamp": "2026-09-12T18:05:57.776322",
+    "ticket_id": "T007",
+    "agent": "technical_agent",
+    "action": "resync_orders",
+    "order_id": "O-1003",
+    "before": {
+      "exists": true,
+      "visible": false,
+      "sync_status": "FAILED",
+      "status": "RETURN_REQUESTED"
+    },
+    "after": {
+      "exists": true,
+      "visible": true,
+      "sync_status": "HEALTHY",
+      "status": "RETURN_REQUESTED"
+    }
+  },
+  {
+    "timestamp": "2026-09-12T18:08:36.770069",
+    "ticket_id": "T002",
+    "agent": "billing_agent",
+    "action": "release_pending_refund",
+    "order_id": "O-1001",
+    "customer_id": "C002",
+    "before": {
+      "payment_status": "REFUND_INITIATED",
+      "refund_status": "PENDING",
+      "invoice_status": "GENERATED",
+      "duplicate_charge": false
+    },
+    "after": {
+      "payment_status": "SUCCESS",
+      "refund_status": "PROCESSED",
+      "invoice_status": "GENERATED",
+      "duplicate_charge": false
+    }
+  },
+  {
+    "timestamp": "2026-09-12T18:11:06.897185",
+    "ticket_id": "T003",
+    "agent": "billing_agent",
+    "action": "flag_for_manual_review:Invalid destination bank account",
+    "order_id": "O-1002",
+    "customer_id": "C003",
+    "before": {
+      "payment_status": "FAILED",
+      "refund_status": "REJECTED",
+      "invoice_status": "GENERATED",
+      "duplicate_charge": false
+    },
+    "after": {
+      "payment_status": "FAILED",
+      "refund_status": "MANUAL_REVIEW",
+      "invoice_status": "GENERATED",
+      "duplicate_charge": false
+    }
+  },
+  {
+    "timestamp": "2026-09-12T18:12:53.198631",
+    "ticket_id": "T004",
+    "agent": "technical_agent",
+    "action": "unlock_account",
+    "customer_id": "C004",
+    "before": {
+      "customer_id": "C004",
+      "account_status": "LOCKED",
+      "session_status": "EXPIRED",
+      "login_failures": 5
+    },
+    "after": {
+      "customer_id": "C004",
+      "account_status": "ACTIVE",
+      "session_status": "EXPIRED",
+      "login_failures": 0
+    }
+  }
+]
