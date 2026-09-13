@@ -20,6 +20,8 @@ from typing import Optional
 from orchestrator import MarketOrchestrator
 from shared_data import TICKETS, ORDERS, CUSTOMERS
 
+app = FastAPI(title="Multi-Agent Market Dispatcher")
+
 class InjectedTicket(BaseModel):
     ticket_text: str
     urgency_score: int = 50
@@ -27,8 +29,6 @@ class InjectedTicket(BaseModel):
     customer_id: Optional[str] = None
     title: Optional[str] = None
     category: Optional[str] = None
-
-app = FastAPI(title="Multi-Agent Market Dispatcher")
 
 app.add_middleware(
     CORSMiddleware,
@@ -247,7 +247,7 @@ def initialize_default_queue():
     ticket_queue.append(t2)
 
 # Populate initial queue on startup
-initialize_default_queue()
+#initialize_default_queue()
 
 
 @app.get("/queue")

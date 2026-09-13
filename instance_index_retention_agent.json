@@ -18,6 +18,15 @@
     "timestamp": 1789262436.85401
   },
   {
+    "ticket_id": "T-QUEUE-101",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.25,
+    "coverage_score": 1.0,
+    "gap": -0.75,
+    "success": true,
+    "timestamp": 1789264580.597655
+  },
+  {
     "ticket_id": "T-QUEUE-101-REBID-IT2",
     "text": "it's been 2 days",
     "raw_confidence": 0.5,
@@ -180,6 +189,15 @@
     "timestamp": 1789255251.052518
   },
   {
+    "ticket_id": "T-USER-101",
+    "text": "i want to return this item.",
+    "raw_confidence": 0.85,
+    "coverage_score": 1.0,
+    "gap": -0.15,
+    "success": true,
+    "timestamp": 1789265692.9743695
+  },
+  {
     "ticket_id": "T-USER-111",
     "text": "it's been 2 days",
     "raw_confidence": 0.9,
@@ -205,6 +223,15 @@
     "gap": -0.05,
     "success": true,
     "timestamp": 1789262578.693867
+  },
+  {
+    "ticket_id": "T-USER-100",
+    "text": "my orders have disappeared",
+    "raw_confidence": 0.95,
+    "coverage_score": 1.0,
+    "gap": -0.05,
+    "success": true,
+    "timestamp": 1789265549.3213835
   },
   {
     "ticket_id": "T003",

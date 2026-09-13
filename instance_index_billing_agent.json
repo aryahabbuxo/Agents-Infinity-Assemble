@@ -306,6 +306,33 @@
     "timestamp": 1789262579.6467793
   },
   {
+    "ticket_id": "T-QUEUE-101",
+    "text": "it's been 2 days",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789264580.598247
+  },
+  {
+    "ticket_id": "T-USER-100",
+    "text": "my orders have disappeared",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789265549.322052
+  },
+  {
+    "ticket_id": "T-USER-101",
+    "text": "i want to return this item.",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789265692.9749956
+  },
+  {
     "ticket_id": "T003",
     "text": "I have been a customer for 3 years and I've had so many issues recently. Nobody helps me. I want to cancel my subscription immediately!",
     "raw_confidence": 0.6667,
@@ -334,6 +361,15 @@
   },
   {
     "ticket_id": "T-USER-100",
+    "text": "my orders have disappeared and my refund is not initiated",
+    "raw_confidence": 0.5,
+    "coverage_score": 0.5,
+    "gap": 0.0,
+    "success": false,
+    "timestamp": 1789265487.579779
+  },
+  {
+    "ticket_id": "T-USER-100",
     "text": "My refund hasnt been processed since 2 days, I am cancelling my subscription.",
     "raw_confidence": 0.8,
     "coverage_score": 0.5,
@@ -349,6 +385,15 @@
     "gap": 0.3,
     "success": false,
     "timestamp": 1789262153.3320549
+  },
+  {
+    "ticket_id": "T-QUEUE-101",
+    "text": "My refund hasn't shown up yet, it's been 2 days, please check the payment.",
+    "raw_confidence": 0.8,
+    "coverage_score": 0.5,
+    "gap": 0.3,
+    "success": false,
+    "timestamp": 1789264447.8150477
   },
   {
     "ticket_id": "T-QUEUE-101",
