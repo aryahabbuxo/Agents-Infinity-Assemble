@@ -1,5 +1,23 @@
 [
   {
+    "ticket_id": "T-USER-102",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.2,
+    "coverage_score": 1.0,
+    "gap": -0.8,
+    "success": true,
+    "timestamp": 1789262434.4499125
+  },
+  {
+    "ticket_id": "T-USER-105",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.2,
+    "coverage_score": 1.0,
+    "gap": -0.8,
+    "success": true,
+    "timestamp": 1789262436.85401
+  },
+  {
     "ticket_id": "T-QUEUE-101-REBID-IT2",
     "text": "it's been 2 days",
     "raw_confidence": 0.5,
@@ -18,6 +36,24 @@
     "timestamp": 1789254662.2610273
   },
   {
+    "ticket_id": "T-USER-108",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.55,
+    "coverage_score": 1.0,
+    "gap": -0.45,
+    "success": true,
+    "timestamp": 1789262576.9659464
+  },
+  {
+    "ticket_id": "T-USER-104",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.6,
+    "coverage_score": 1.0,
+    "gap": -0.4,
+    "success": true,
+    "timestamp": 1789262436.0576487
+  },
+  {
     "ticket_id": "T-USER-100",
     "text": "My refund has not arrived.",
     "raw_confidence": 0.638,
@@ -25,6 +61,24 @@
     "gap": -0.362,
     "success": true,
     "timestamp": 1789254950.6521413
+  },
+  {
+    "ticket_id": "T-USER-107",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.65,
+    "coverage_score": 1.0,
+    "gap": -0.35,
+    "success": true,
+    "timestamp": 1789262537.5780084
+  },
+  {
+    "ticket_id": "T-USER-109",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.65,
+    "coverage_score": 1.0,
+    "gap": -0.35,
+    "success": true,
+    "timestamp": 1789262577.8125424
   },
   {
     "ticket_id": "T-USER-101",
@@ -55,6 +109,24 @@
   },
   {
     "ticket_id": "T-USER-100",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.75,
+    "coverage_score": 1.0,
+    "gap": -0.25,
+    "success": true,
+    "timestamp": 1789262432.8752477
+  },
+  {
+    "ticket_id": "T-USER-106",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.75,
+    "coverage_score": 1.0,
+    "gap": -0.25,
+    "success": true,
+    "timestamp": 1789262565.0001557
+  },
+  {
+    "ticket_id": "T-USER-100",
     "text": "Refund issue: refund not visible in profile dashboard",
     "raw_confidence": 0.753,
     "coverage_score": 1.0,
@@ -72,6 +144,33 @@
     "timestamp": 1789257026.2655764
   },
   {
+    "ticket_id": "T-QUEUE-101",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.8,
+    "coverage_score": 1.0,
+    "gap": -0.2,
+    "success": true,
+    "timestamp": 1789262277.2260308
+  },
+  {
+    "ticket_id": "T-USER-101",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.8,
+    "coverage_score": 1.0,
+    "gap": -0.2,
+    "success": true,
+    "timestamp": 1789262433.6785803
+  },
+  {
+    "ticket_id": "T-USER-103",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.8,
+    "coverage_score": 1.0,
+    "gap": -0.2,
+    "success": true,
+    "timestamp": 1789262435.2297773
+  },
+  {
     "ticket_id": "T-USER-101",
     "text": "I want to cancel my subscription",
     "raw_confidence": 0.845,
@@ -79,6 +178,33 @@
     "gap": -0.155,
     "success": true,
     "timestamp": 1789255251.052518
+  },
+  {
+    "ticket_id": "T-USER-111",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.9,
+    "coverage_score": 1.0,
+    "gap": -0.1,
+    "success": true,
+    "timestamp": 1789262579.646088
+  },
+  {
+    "ticket_id": "T-QUEUE-101",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.95,
+    "coverage_score": 1.0,
+    "gap": -0.05,
+    "success": true,
+    "timestamp": 1789261370.1700697
+  },
+  {
+    "ticket_id": "T-USER-110",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.95,
+    "coverage_score": 1.0,
+    "gap": -0.05,
+    "success": true,
+    "timestamp": 1789262578.693867
   },
   {
     "ticket_id": "T003",

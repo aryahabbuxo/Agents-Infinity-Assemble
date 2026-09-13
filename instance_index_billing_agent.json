@@ -180,6 +180,132 @@
     "timestamp": 1789257536.638446
   },
   {
+    "ticket_id": "T-QUEUE-101",
+    "text": "it's been 2 days",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789261370.1707568
+  },
+  {
+    "ticket_id": "T-QUEUE-101",
+    "text": "it's been 2 days",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789262277.2265413
+  },
+  {
+    "ticket_id": "T-USER-100",
+    "text": "it's been 2 days",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789262432.8757539
+  },
+  {
+    "ticket_id": "T-USER-101",
+    "text": "it's been 2 days",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789262433.6790805
+  },
+  {
+    "ticket_id": "T-USER-102",
+    "text": "it's been 2 days",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789262434.450416
+  },
+  {
+    "ticket_id": "T-USER-103",
+    "text": "it's been 2 days",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789262435.2303321
+  },
+  {
+    "ticket_id": "T-USER-104",
+    "text": "it's been 2 days",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789262436.0581803
+  },
+  {
+    "ticket_id": "T-USER-105",
+    "text": "it's been 2 days",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789262436.854565
+  },
+  {
+    "ticket_id": "T-USER-107",
+    "text": "it's been 2 days",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789262537.5785663
+  },
+  {
+    "ticket_id": "T-USER-106",
+    "text": "it's been 2 days",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789262565.0008519
+  },
+  {
+    "ticket_id": "T-USER-108",
+    "text": "it's been 2 days",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789262576.9672089
+  },
+  {
+    "ticket_id": "T-USER-109",
+    "text": "it's been 2 days",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789262577.81334
+  },
+  {
+    "ticket_id": "T-USER-110",
+    "text": "it's been 2 days",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789262578.6945882
+  },
+  {
+    "ticket_id": "T-USER-111",
+    "text": "it's been 2 days",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789262579.6467793
+  },
+  {
     "ticket_id": "T003",
     "text": "I have been a customer for 3 years and I've had so many issues recently. Nobody helps me. I want to cancel my subscription immediately!",
     "raw_confidence": 0.6667,
@@ -218,11 +344,29 @@
   {
     "ticket_id": "T-QUEUE-101",
     "text": "My refund hasn't shown up yet, it's been 2 days, please check the payment.",
+    "raw_confidence": 0.8,
+    "coverage_score": 0.5,
+    "gap": 0.3,
+    "success": false,
+    "timestamp": 1789262153.3320549
+  },
+  {
+    "ticket_id": "T-QUEUE-101",
+    "text": "My refund hasn't shown up yet, it's been 2 days, please check the payment.",
     "raw_confidence": 0.85,
     "coverage_score": 0.5,
     "gap": 0.35,
     "success": false,
     "timestamp": 1789257226.98123
+  },
+  {
+    "ticket_id": "T-QUEUE-101",
+    "text": "My refund hasn't shown up yet, it's been 2 days, please check the payment.",
+    "raw_confidence": 0.85,
+    "coverage_score": 0.5,
+    "gap": 0.35,
+    "success": false,
+    "timestamp": 1789261235.698062
   },
   {
     "ticket_id": "T-USER-102",

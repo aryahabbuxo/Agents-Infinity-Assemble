@@ -20,6 +20,14 @@ from typing import Optional
 from orchestrator import MarketOrchestrator
 from shared_data import TICKETS, ORDERS, CUSTOMERS
 
+class InjectedTicket(BaseModel):
+    ticket_text: str
+    urgency_score: int = 50
+    order_id: Optional[str] = None
+    customer_id: Optional[str] = None
+    title: Optional[str] = None
+    category: Optional[str] = None
+
 app = FastAPI(title="Multi-Agent Market Dispatcher")
 
 app.add_middleware(
