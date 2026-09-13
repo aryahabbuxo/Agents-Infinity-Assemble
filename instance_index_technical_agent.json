@@ -9,6 +9,51 @@
     "timestamp": 1789240438.378203
   },
   {
+    "ticket_id": "T-USER-100",
+    "text": "User test ticket: account locked and refund missing",
+    "raw_confidence": 0.6,
+    "coverage_score": 1.0,
+    "gap": -0.4,
+    "success": true,
+    "timestamp": 1789249084.4241083
+  },
+  {
+    "ticket_id": "T-QUEUE-102",
+    "text": "I cannot log into my account at all! It keeps saying my account is locked.",
+    "raw_confidence": 0.8,
+    "coverage_score": 1.0,
+    "gap": -0.2,
+    "success": true,
+    "timestamp": 1789257484.2294965
+  },
+  {
+    "ticket_id": "T-USER-100",
+    "text": "I cannot log into my account at all! It keeps saying my account is locked. Please unlock my account.",
+    "raw_confidence": 0.85,
+    "coverage_score": 1.0,
+    "gap": -0.15,
+    "success": true,
+    "timestamp": 1789251511.6630113
+  },
+  {
+    "ticket_id": "T-USER-101",
+    "text": "I cannot log into my account at all! It keeps saying my account is locked. Please unlock my account.\"",
+    "raw_confidence": 0.85,
+    "coverage_score": 1.0,
+    "gap": -0.15,
+    "success": true,
+    "timestamp": 1789251516.7815855
+  },
+  {
+    "ticket_id": "T-USER-102",
+    "text": "I cannot log into my account at all! It keeps saying my account is locked. Please unlock my account.\"",
+    "raw_confidence": 0.85,
+    "coverage_score": 1.0,
+    "gap": -0.15,
+    "success": true,
+    "timestamp": 1789251521.1661794
+  },
+  {
     "ticket_id": "T007",
     "text": "I had an item marked for return and refund however it's no longer visible in my orders section in my profile dashboard. I want my money transferred back to me immediately. I am losing my patience, this issue hasn't been addressed since 2 days.",
     "raw_confidence": 1.0,
@@ -16,6 +61,33 @@
     "gap": 0.0,
     "success": true,
     "timestamp": 1789245720.972033
+  },
+  {
+    "ticket_id": "T-USER-101",
+    "text": "my orders have vanished and my refund is not credited",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789248645.3159335
+  },
+  {
+    "ticket_id": "T-USER-102",
+    "text": "I want a refund in 2 days",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789255225.6184816
+  },
+  {
+    "ticket_id": "T-USER-103",
+    "text": "I want refund",
+    "raw_confidence": 1.0,
+    "coverage_score": 1.0,
+    "gap": 0.0,
+    "success": true,
+    "timestamp": 1789255261.343277
   },
   {
     "ticket_id": "T003",
@@ -52,5 +124,32 @@
     "gap": 0.25,
     "success": false,
     "timestamp": 1789245789.2397597
+  },
+  {
+    "ticket_id": "T-USER-100",
+    "text": "Re-Bid Iteration Fix & Test Ticket Scenarios  ## Problem Summary  1 **Re-bid iteration logic has a bug** \u2014 `evaluate_coverage()` in `vetting py` expects a `dict | str` This means coverage scores may be artificially inflated preventing proper re-bids **Test ticket scenarios needed** \u2014 user wants to test tickets where different agents win the auction collaborate ## Proposed Changes  ---  ### 1 py](file:///c:/Users/Kanishk/Desktop/Agents-Infinity-Assemble-all-agents-communicating/vetting py)  The `evaluate_coverage` function signature says `evidence_trail: dict | str` When it falls through to `str(evidence_trail)` Fix:  - Add an `isinstance(evidence_trail concatenates all diagnosis statements state_before_after collaboration_result fields from each evidence dict into a single search corpus Backend: Dispatcher API Endpoint Fixes  #### [MODIFY] [dispatcher py](file:///c:/Users/Kanishk/Desktop/Agents-Infinity-Assemble-all-agents-communicating/dispatcher `customer_id` to `\"C001\"` subscription cancellation) `shared_data CUSTOMERS` - The `/agent_trace` endpoint doesn't include the `ticket_text` in its `executed_tickets_summary` - Add a new `/inject_and_trace` endpoint that injects a ticket the updated trace logs in a single response \u2014 this eliminates the race condition where the frontend calls `/inject_ticket` then polls `/agent_trace` before the trace data is written jsx](file:///c:/Users/Kanishk/Desktop/Agents-Infinity-Assemble-all-agents-communicating/frontend/src/App jsx)  - After `handleAddTicket` completes gets a backend response Currently this is done #### [MODIFY] [auctionBackend js](file:///c:/Users/Kanishk/Desktop/Agents-Infinity-Assemble-all-agents-communicating/frontend/src/services/auctionBackend js)  - Add a new `injectAndTrace` function that calls the new `/inject_and_trace` endpoint jsx)  - Add `ticket_text` display in the executed tickets summary cards - When trace logs are empty Backend: Test Ticket Scenarios  #### [MODIFY] [dispatcher py](file:///c:/Users/Kanishk/Desktop/Agents-Infinity-Assemble-all-agents-communicating/dispatcher py)  Add a new `GET /test_tickets` endpoint that returns pre-built test ticket texts the user can copy-paste These exercise all three agent types it's been 2 days \" | technical_agent | No | | 3 | \"I have been a customer for 3 years I've had so many issues recently I want to cancel my subscription I need a receipt for my records \" | billing_agent | No |  > [ will NOT be touched All changes are to the backend dispatcher/vetting - `curl http://localhost:8000/test_tickets` to verify test ticket endpoint - Inject each test ticket via `curl -X POST http://localhost:8000/inject_and_trace` verify the response contains both execution results trace logs - `npm run build` to verify frontend compiles",
+    "raw_confidence": 0.4,
+    "coverage_score": 0.4583,
+    "gap": -0.0583,
+    "success": false,
+    "timestamp": 1789254242.350364
+  },
+  {
+    "ticket_id": "T-USER-100",
+    "text": "Re-Bid Iteration Fix & Test Ticket Scenarios  ## Problem Summary  1 **Re-bid iteration logic has a bug** \u2014 `evaluate_coverage()` in `vetting py` expects a `dict | str` This means coverage scores may be artificially inflated preventing proper re-bids **Test ticket scenarios needed** \u2014 user wants to test tickets where different agents win the auction collaborate ## Proposed Changes  ---  ### 1 py](file:///c:/Users/Kanishk/Desktop/Agents-Infinity-Assemble-all-agents-communicating/vetting py)  The `evaluate_coverage` function signature says `evidence_trail: dict | str` When it falls through to `str(evidence_trail)` Fix:  - Add an `isinstance(evidence_trail concatenates all diagnosis statements state_before_after collaboration_result fields from each evidence dict into a single search corpus Backend: Dispatcher API Endpoint Fixes  #### [MODIFY] [dispatcher py](file:///c:/Users/Kanishk/Desktop/Agents-Infinity-Assemble-all-agents-communicating/dispatcher `customer_id` to `\"C001\"` subscription cancellation) `shared_data CUSTOMERS` - The `/agent_trace` endpoint doesn't include the `ticket_text` in its `executed_tickets_summary` - Add a new `/inject_and_trace` endpoint that injects a ticket the updated trace logs in a single response \u2014 this eliminates the race condition where the frontend calls `/inject_ticket` then polls `/agent_trace` before the trace data is written jsx](file:///c:/Users/Kanishk/Desktop/Agents-Infinity-Assemble-all-agents-communicating/frontend/src/App jsx)  - After `handleAddTicket` completes gets a backend response Currently this is done #### [MODIFY] [auctionBackend js](file:///c:/Users/Kanishk/Desktop/Agents-Infinity-Assemble-all-agents-communicating/frontend/src/services/auctionBackend js)  - Add a new `injectAndTrace` function that calls the new `/inject_and_trace` endpoint jsx)  - Add `ticket_text` display in the executed tickets summary cards - When trace logs are empty Backend: Test Ticket Scenarios  #### [MODIFY] [dispatcher py](file:///c:/Users/Kanishk/Desktop/Agents-Infinity-Assemble-all-agents-communicating/dispatcher py)  Add a new `GET /test_tickets` endpoint that returns pre-built test ticket texts the user can copy-paste These exercise all three agent types it's been 2 days \" | technical_agent | No | | 3 | \"I have been a customer for 3 years I've had so many issues recently I want to cancel my subscription I need a receipt for my records \" | billing_agent | No |  > [ will NOT be touched All changes are to the backend dispatcher/vetting - `curl http://localhost:8000/test_tickets` to verify test ticket endpoint - Inject each test ticket via `curl -X POST http://localhost:8000/inject_and_trace` verify the response contains both execution results trace logs - `npm run build` to verify frontend compiles",
+    "raw_confidence": 0.4,
+    "coverage_score": 0.4583,
+    "gap": -0.0583,
+    "success": false,
+    "timestamp": 1789254275.780004
+  },
+  {
+    "ticket_id": "T-USER-100",
+    "text": "# Agent Call Trace Sync, Re-Bid Iteration Fix & Test Ticket Scenarios  ## Problem Summary  1. **Agent Call Trace dashboard is not syncing with Market View** \u2014 when a ticket is executed via the Market view (Ticket Intake \u2192 inject), the trace data doesn't reliably appear in the Agent Call Trace dashboard. 2. **Re-bid iteration logic has a bug** \u2014 `evaluate_coverage()` in `vetting.py` expects a `dict | str` but the orchestrator passes a **list** (`accumulated_evidence`), causing the vetting to `str()` the entire list instead of properly extracting evidence fields. This means coverage scores may be artificially inflated, preventing proper re-bids. 3. **Test ticket scenarios needed** \u2014 user wants to test tickets where different agents win the auction and collaborate.  ## Proposed Changes  ---  ### 1. Backend: Fix `evaluate_coverage` List Handling  #### [MODIFY] [vetting.py](file:///c:/Users/Kanishk/Desktop/Agents-Infinity-Assemble-all-agents-communicating/vetting.py)  The `evaluate_coverage` function signature says `evidence_trail: dict | str` but the orchestrator passes a **list** of result dicts (`accumulated_evidence`). When it falls through to `str(evidence_trail)`, the stringified list includes Python repr noise. Fix:  - Add an `isinstance(evidence_trail, list)` branch that iterates through the list and concatenates all diagnosis, actions, statements, state_before_after, and collaboration_result fields from each evidence dict into a single search corpus.  ---  ### 2. Backend: Dispatcher API Endpoint Fixes  #### [MODIFY] [dispatcher.py](file:///c:/Users/Kanishk/Desktop/Agents-Infinity-Assemble-all-agents-communicating/dispatcher.py)  **Issues found:** - The `inject_ticket` endpoint always defaults `order_id` to `\"O-1001\"` and `customer_id` to `\"C001\"`. For tickets involving different scenarios (billing refund rejection, account lock, subscription cancellation), the orchestrator needs the correct order/customer mappings. Add a smart auto-detect that maps ticket text keywords to the appropriate order/customer from `shared_data.ORDERS` and `shared_data.CUSTOMERS`. - The `/agent_trace` endpoint doesn't include the `ticket_text` in its `executed_tickets_summary`, making it impossible for the trace dashboard to show what ticket was about. - Add a new `/inject_and_trace` endpoint that injects a ticket AND immediately returns both the execution result AND the updated trace logs in a single response \u2014 this eliminates the race condition where the frontend calls `/inject_ticket` and then polls `/agent_trace` before the trace data is written.  ---  ### 3. Frontend: Sync Trace Dashboard with Market Executions  #### [MODIFY] [App.jsx](file:///c:/Users/Kanishk/Desktop/Agents-Infinity-Assemble-all-agents-communicating/frontend/src/App.jsx)  - After `handleAddTicket` completes and gets a backend response, immediately call `syncBackendData()` to refresh trace logs. Currently this is done but the trace dashboard may not reflect the update because the user might be on the 'market' view. Fix: store the latest execution result and auto-switch or show a notification. - When a ticket is injected from the market view, store the execution trace_steps from the response directly into `traceLogs` state immediately (don't wait for the next poll cycle).  #### [MODIFY] [auctionBackend.js](file:///c:/Users/Kanishk/Desktop/Agents-Infinity-Assemble-all-agents-communicating/frontend/src/services/auctionBackend.js)  - Add a new `injectAndTrace` function that calls the new `/inject_and_trace` endpoint.  #### [MODIFY] [AgentCallTraceDashboard.jsx](file:///c:/Users/Kanishk/Desktop/Agents-Infinity-Assemble-all-agents-communicating/frontend/src/components/AgentCallTraceDashboard.jsx)  - Add `ticket_text` display in the executed tickets summary cards. - When trace logs are empty and the dashboard loads, show a clear empty state with instructions to submit a ticket from the Market View first.  ---  ### 4. Backend: Test Ticket Scenarios  #### [MODIFY] [dispatcher.py](file:///c:/Users/Kanishk/Desktop/Agents-Infinity-Assemble-all-agents-communicating/dispatcher.py)  Add a new `GET /test_tickets` endpoint that returns pre-built test ticket texts the user can copy-paste. These exercise all three agent types and collaboration scenarios:  | # | Ticket Text | Expected Winner | Collaboration? | |---|---|---|---| | 1 | \"My refund hasn't shown up yet, it's been 2 days, please check the payment.\" | billing_agent | No | | 2 | \"I cannot log into my account at all! It keeps saying my account is locked.\" | technical_agent | No | | 3 | \"I have been a customer for 3 years and I've had so many issues recently. I want to cancel my subscription!\" | retention_agent | Yes (billing) | | 4 | \"My item was marked for return and refund but it's no longer visible in my orders dashboard. I want my money back.\" | billing_agent | Yes (technical) | | 5 | \"I was charged twice for the same order. Please refund the duplicate charge.\" | billing_agent | No | | 6 | \"My invoice was never generated for my order. I need a receipt for my records.\" | billing_agent | No |  > [!NOTE] > The market view is working well and will NOT be touched. All changes are to the backend dispatcher/vetting and the Agent Call Trace dashboard only.  ## Verification Plan  ### Automated Tests - `curl http://localhost:8000/health` to verify backend is up. - `curl http://localhost:8000/test_tickets` to verify test ticket endpoint. - Inject each test ticket via `curl -X POST http://localhost:8000/inject_and_trace` and verify the response contains both execution results and trace logs. - `npm run build` to verify frontend compiles.  ### Manual Verification - Submit each test ticket from the Market View and verify the Agent Call Trace dashboard shows the corresponding trace immediately.",
+    "raw_confidence": 0.97,
+    "coverage_score": 0.4583,
+    "gap": 0.5117,
+    "success": false,
+    "timestamp": 1789254120.421343
   }
 ]

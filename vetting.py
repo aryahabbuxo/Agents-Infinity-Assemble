@@ -76,27 +76,47 @@ def extract_keywords(clause: str) -> list[str]:
     return keywords
 
 
-def evaluate_coverage(ticket_text: str, evidence_trail: dict | str) -> dict:
+def _extract_evidence_text(evidence: dict) -> str:
+    """Extract all searchable text fields from a single evidence dict."""
+    parts = []
+    parts.append(str(evidence.get("diagnosis", "")))
+    parts.append(str(evidence.get("actions_taken") or evidence.get("execution_results") or ""))
+    parts.append(str(evidence.get("final_statement") or evidence.get("customer_statement") or ""))
+    parts.append(str(evidence.get("state_before_after") or ""))
+    collab = evidence.get("collaboration_result")
+    if isinstance(collab, dict):
+        parts.append(str(collab.get("statement", "")))
+        parts.append(str(collab.get("result", "")))
+        parts.append(str(collab.get("diagnosis", "")))
+        parts.append(str(collab.get("execution_results", "")))
+    else:
+        parts.append(str(collab or ""))
+    parts.append(str(evidence.get("negotiation_transcript") or ""))
+    parts.append(str(evidence.get("observations") or ""))
+    parts.append(str(evidence.get("verification") or ""))
+    return " ".join(parts)
+
+
+def evaluate_coverage(ticket_text: str, evidence_trail) -> dict:
     """
     Evaluates whether each customer ask in ticket_text is covered somewhere in the full evidence trail.
 
-    evidence_trail can be a dict containing:
-    {
-        "diagnosis": ...,
-        "actions_taken": [...],
-        "execution_results": [...],
-        "final_statement": ...,
-        "state_before_after": [...]
-    }
-    or a combined string.
+    evidence_trail can be:
+    - A list of result dicts (accumulated across iterations)
+    - A single dict containing diagnosis, actions_taken, etc.
+    - A combined string.
     """
-    if isinstance(evidence_trail, dict):
-        diag = str(evidence_trail.get("diagnosis", ""))
-        actions = str(evidence_trail.get("actions_taken") or evidence_trail.get("execution_results") or "")
-        statement = str(evidence_trail.get("final_statement") or evidence_trail.get("customer_statement") or "")
-        state_changes = str(evidence_trail.get("state_before_after") or "")
-        collab = str(evidence_trail.get("collaboration_result") or "")
-        full_trail_text = f"{diag} {actions} {statement} {state_changes} {collab}".lower()
+    if isinstance(evidence_trail, list):
+        # Merge all evidence dicts from all iterations into a single corpus
+        merged_parts = []
+        for item in evidence_trail:
+            if isinstance(item, dict):
+                merged_parts.append(_extract_evidence_text(item))
+            else:
+                merged_parts.append(str(item))
+        full_trail_text = " ".join(merged_parts).lower()
+    elif isinstance(evidence_trail, dict):
+        full_trail_text = _extract_evidence_text(evidence_trail).lower()
     else:
         full_trail_text = str(evidence_trail).lower()
 

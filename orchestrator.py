@@ -114,6 +114,8 @@ class MarketOrchestrator:
         current_ticket_text = ticket["text"]
         accumulated_evidence = []
         last_result = None
+        trace_steps = []
+        rebid_subtickets = []
 
         while iteration <= MAX_ITERATIONS:
             if iteration > 1:
@@ -300,22 +302,67 @@ class MarketOrchestrator:
                 rank_label = "TOP" if idx == 1 else ("BOTTOM" if idx == len(indexed_insts) else f"RANK #{idx}")
                 print(f"    [{rank_label}] Ticket {inst['ticket_id']} | Coverage: {inst['coverage_score']} | Gap: {inst['gap']:+.4f} | Success: {inst['success']}")
 
+            # Save step data
+            iteration_step = {
+                "iteration": iteration,
+                "ticket_id": ticket["ticket_id"],
+                "sub_ticket_text": current_ticket_text,
+                "bids": bids,
+                "winning_bid": winning_bid,
+                "lead_agent_id": lead_agent_id,
+                "diagnosis": result.get("diagnosis") or result.get("customer_statement"),
+                "negotiation_transcript": result.get("negotiation_transcript", []),
+                "state_before_after": result.get("state_before_after", []),
+                "execution_results": result.get("execution_results") or result.get("actions_taken") or [],
+                "vetting": vetting_res,
+                "penalty_info": penalty_info,
+                "indexed_instances": indexed_insts,
+                "rebound_triggered": False,
+                "rebound_subticket": None,
+            }
+
             # -----------------------------------------------------
             # STAGE 7: Re-Bidding Stopping Decision (coverage_score < 0.7)
             # -----------------------------------------------------
             if cov_score >= 0.7:
                 print_banner(f"TICKET {ticket['ticket_id']} PASSED VETTING (Coverage {cov_score:.2f} >= 0.7 threshold)", "*")
+                trace_steps.append(iteration_step)
                 break
             elif iteration < MAX_ITERATIONS and vetting_res["unaddressed_clauses"]:
-                current_ticket_text = " ".join(vetting_res["unaddressed_clauses"])
+                rebid_text = " ".join(vetting_res["unaddressed_clauses"])
+                rebid_subticket = {
+                    "ticket_id": f"{ticket['ticket_id']}-REBID-IT{iteration + 1}",
+                    "parent_ticket_id": ticket["ticket_id"],
+                    "text": rebid_text,
+                    "urgency_score": min(100, ticket.get("urgency_score", 50) + 15),
+                    "order_id": order_id,
+                    "customer_id": customer_id,
+                    "is_rebid": True,
+                    "rebid_iteration": iteration + 1
+                }
+                iteration_step["rebound_triggered"] = True
+                iteration_step["rebound_subticket"] = rebid_subticket
+                trace_steps.append(iteration_step)
+                rebid_subtickets.append(rebid_subticket)
+
+                current_ticket_text = rebid_text
                 print(f"\n [RE-BID TRIGGERED] Coverage score {cov_score:.2f} < 0.7 threshold! Preparing re-bid iteration {iteration + 1}...")
                 iteration += 1
             else:
                 print_banner(f"TICKET {ticket['ticket_id']} STOPPED (Max iterations {MAX_ITERATIONS} reached)", "!")
+                trace_steps.append(iteration_step)
                 break
 
         statement = (last_result.get("final_statement") or last_result.get("customer_statement") or "Issue handled.") if last_result else "Completed."
         print(f"\nFinal Resolution Statement: \"{statement}\"\n")
+
+        if last_result is None:
+            last_result = {}
+
+        last_result["trace_steps"] = trace_steps
+        last_result["rebid_subtickets"] = rebid_subtickets
+        last_result["final_statement"] = statement
+        last_result["lead_agent"] = lead_agent_id
         return last_result
 
 

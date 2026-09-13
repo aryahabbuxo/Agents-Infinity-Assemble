@@ -118,7 +118,6 @@ export default function LiveAuctionPanel({
 
                 <div className="agent-meta">
                   <span>SLA: {agent.slaSpeed}</span>
-                  <span>Acc: {agent.accuracy}</span>
                 </div>
 
                 <p className="agent-thought-text">

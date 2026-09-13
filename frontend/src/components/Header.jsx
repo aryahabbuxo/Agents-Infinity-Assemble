@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bot, Play, Pause, FastForward, PlusCircle, RefreshCw } from 'lucide-react';
+import { Bot, Play, Pause, FastForward, PlusCircle, RefreshCw, Activity, Layers } from 'lucide-react';
 
 export default function Header({ 
   isPlaying, 
@@ -7,7 +7,9 @@ export default function Header({
   speed, 
   setSpeed, 
   onOpenModal,
-  onResetSimulation
+  onResetSimulation,
+  activeView,
+  setActiveView
 }) {
   return (
     <header className="app-header">
@@ -17,11 +19,32 @@ export default function Header({
         </div>
         <div>
           <h1 className="brand-title">Autonomous Agent Ticket Auction & Resolution Engine</h1>
-          <p className="brand-subtitle">Real-time multi-agent bidding and automated resolution workflow</p>
+          <p className="brand-subtitle">Real-time multi-agent bidding, coverage vetting & live execution market</p>
         </div>
       </div>
 
       <div className="header-controls">
+        {/* VIEW NAVIGATION TOGGLE BUTTONS */}
+        <div className="view-toggle-group">
+          <button 
+            className={`btn-pill ${activeView === 'market' ? 'btn-view-active' : ''}`}
+            onClick={() => setActiveView('market')}
+            title="Market Auction & Resolution View"
+          >
+            <Layers size={16} />
+            <span>Market View</span>
+          </button>
+          
+          <button 
+            className={`btn-pill ${activeView === 'trace' ? 'btn-view-active' : ''}`}
+            onClick={() => setActiveView('trace')}
+            title="Agent Call Trace & Execution Terminal"
+          >
+            <Activity size={16} color="#10b981" />
+            <span>Agent Call Trace</span>
+          </button>
+        </div>
+
         <button 
           className="btn-pill"
           onClick={() => setIsPlaying(!isPlaying)}

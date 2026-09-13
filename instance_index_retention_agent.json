@@ -1,5 +1,41 @@
 [
   {
+    "ticket_id": "T-QUEUE-101-REBID-IT2",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.5,
+    "coverage_score": 1.0,
+    "gap": -0.5,
+    "success": true,
+    "timestamp": 1789257536.6322792
+  },
+  {
+    "ticket_id": "T-USER-100",
+    "text": "I am cancelling my subscription",
+    "raw_confidence": 0.522,
+    "coverage_score": 1.0,
+    "gap": -0.478,
+    "success": true,
+    "timestamp": 1789254662.2610273
+  },
+  {
+    "ticket_id": "T-USER-100",
+    "text": "My refund has not arrived.",
+    "raw_confidence": 0.638,
+    "coverage_score": 1.0,
+    "gap": -0.362,
+    "success": true,
+    "timestamp": 1789254950.6521413
+  },
+  {
+    "ticket_id": "T-USER-101",
+    "text": "I want to cancel my subscription",
+    "raw_confidence": 0.662,
+    "coverage_score": 1.0,
+    "gap": -0.338,
+    "success": true,
+    "timestamp": 1789254210.577145
+  },
+  {
     "ticket_id": "T003",
     "text": "cancel my subscription...",
     "raw_confidence": 0.7,
@@ -7,6 +43,42 @@
     "gap": -0.3,
     "success": true,
     "timestamp": 1789240438.3792028
+  },
+  {
+    "ticket_id": "T-QUEUE-101",
+    "text": "it's been 2 days",
+    "raw_confidence": 0.7,
+    "coverage_score": 1.0,
+    "gap": -0.3,
+    "success": true,
+    "timestamp": 1789257385.478059
+  },
+  {
+    "ticket_id": "T-USER-100",
+    "text": "Refund issue: refund not visible in profile dashboard",
+    "raw_confidence": 0.753,
+    "coverage_score": 1.0,
+    "gap": -0.247,
+    "success": true,
+    "timestamp": 1789247877.5830235
+  },
+  {
+    "ticket_id": "T-USER-101",
+    "text": "i want to cancel my subscription",
+    "raw_confidence": 0.8,
+    "coverage_score": 1.0,
+    "gap": -0.2,
+    "success": true,
+    "timestamp": 1789257026.2655764
+  },
+  {
+    "ticket_id": "T-USER-101",
+    "text": "I want to cancel my subscription",
+    "raw_confidence": 0.845,
+    "coverage_score": 1.0,
+    "gap": -0.155,
+    "success": true,
+    "timestamp": 1789255251.052518
   },
   {
     "ticket_id": "T003",
@@ -25,5 +97,32 @@
     "gap": 0.35,
     "success": false,
     "timestamp": 1789240438.3802035
+  },
+  {
+    "ticket_id": "T-USER-102",
+    "text": "I'm very frustrated",
+    "raw_confidence": 0.685,
+    "coverage_score": 0.0,
+    "gap": 0.685,
+    "success": false,
+    "timestamp": 1789249005.9666822
+  },
+  {
+    "ticket_id": "T-USER-102",
+    "text": "I'm very frustrated",
+    "raw_confidence": 0.8,
+    "coverage_score": 0.0,
+    "gap": 0.8,
+    "success": false,
+    "timestamp": 1789248805.9540806
+  },
+  {
+    "ticket_id": "T-USER-102",
+    "text": "I'm very frustrated",
+    "raw_confidence": 0.818,
+    "coverage_score": 0.0,
+    "gap": 0.818,
+    "success": false,
+    "timestamp": 1789248913.293273
   }
 ]
